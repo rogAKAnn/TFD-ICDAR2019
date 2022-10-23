@@ -16,6 +16,8 @@ def convert_box_to_yolo(line: list()):
     height=abs(line[1] - line[3])
     return [str(round(x_center,6)),str(round(y_center,6)),str(round(width,6)),str(round(height,6))]
 
+def convert_line_csv_to_xml(line: list()):
+    return [line[0], line[1], line[2], line[3]]
 
 with open(csv_file, "r") as my_input_file:
     num_pages= 0
