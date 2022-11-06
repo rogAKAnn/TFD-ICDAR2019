@@ -1,5 +1,5 @@
-from xml.etree.ElementTree import Element, indent
-from lxml import etree
+# from xml.etree.ElementTree import Element, indent
+# from lxml import etree
 import csv
 import os
 import shutil
@@ -80,53 +80,55 @@ def write_csv_to_xml(fileName:str, bbox):
 
     xmlFile.write(result)
 
-csv_dir = './Train/math_gt/'
-csv_list = ["./Train/math_gt/Arkiv_1971_141_163.csv","./Train/math_gt/Arkiv_1997_185_199.csv"]
+# csv_dir = './Train/math_gt/'
+# csv_list = ["./Train/math_gt/Arkiv_1971_141_163.csv","./Train/math_gt/Arkiv_1997_185_199.csv"]
 
-#csv_file='Train/math_gt/Arkiv_1971_141_163.csv'
-num_xml = 0
+# #csv_file='Train/math_gt/Arkiv_1971_141_163.csv'
+# num_xml = 0
 
-for csv_file in csv_list:
-    with open(csv_file,'r') as my_input_file:
-        num_pages=0
-        for i in csv.reader(my_input_file):
-            num_pages = max(int(i[0]),num_pages)
-        num_pages+=1
+# for csv_file in csv_list:
+#     with open(csv_file,'r') as my_input_file:
+#         num_pages=0
+#         for i in csv.reader(my_input_file):
+#             num_pages = max(int(i[0]),num_pages)
+#         num_pages+=1
 
-        my_input_file.seek(0)
-        num_xml_per_csv = 0
+#         my_input_file.seek(0)
+#         num_xml_per_csv = 0
 
-        for i in range(0, num_pages):
-            with open (xml_dir + str(num_xml + i + 1) + '.xml', 'wb') as my_output_file:
-                line = list()
-                for elements in csv.reader(my_input_file):
-                    if elements[0] == str(i):
-                        line.append(elements[1:])
-                write_csv_to_xml(str(num_xml + i + 1), line)
-                line=list()
-                my_input_file.seek(0)
-            my_output_file.close()
-            num_xml_per_csv += 1
-        num_xml += num_xml_per_csv
+#         for i in range(0, num_pages):
+#             with open (xml_dir + str(num_xml + i + 1) + '.xml', 'wb') as my_output_file:
+#                 line = list()
+#                 for elements in csv.reader(my_input_file):
+#                     if elements[0] == str(i):
+#                         line.append(elements[1:])
+#                 write_csv_to_xml(str(num_xml + i + 1), line)
+#                 line=list()
+#                 my_input_file.seek(0)
+#             my_output_file.close()
+#             num_xml_per_csv += 1
+#         num_xml += num_xml_per_csv
         
 
     
 
 
-    my_input_file.close()
+#     my_input_file.close()
 
-print(num_xml)
+# print(num_xml)
 
 
-directory= './Train/train_img/'
-list_dir = ["Arkiv_1971_141_163/","Arkiv_1997_185_199/"]
+directory= './Train/images/'
+img_list = []
+for folder in os.listdir(directory):
+    img_list.append(folder)
+# list_dir = ["Arkiv_1971_141_163/","Arkiv_1997_185_199/"]
 
-# i = 1
-# for folder in list_dir:
-#     for filename in os.listdir(directory + folder) :
-#         shutil.copy2(directory + folder +  filename, './Train/images/' + str(i) + '.png')
-#         i += 1
-    #i = 1
+i = 1
+for folder in img_list:
+    for filename in os.listdir(directory + folder) :
+        shutil.copy2(directory + folder + '/' + filename, './Train/imagesv2/' + str(i) + '.png')
+        i += 1
     # shutil.copy(directory + folder , '.\Train\images')
 
 # i = 1
