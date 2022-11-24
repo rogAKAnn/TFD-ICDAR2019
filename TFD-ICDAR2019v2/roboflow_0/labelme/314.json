@@ -1,0 +1,88 @@
+{
+  "imageData": null,
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "imagePath": "314.jpg",
+  "imageHeight": 2126,
+  "imageWidth": 1709,
+  "shapes": [
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 0,
+      "points": [
+        [
+          631,
+          300
+        ],
+        [
+          964.2,
+          334.98
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 1,
+      "points": [
+        [
+          623,
+          432
+        ],
+        [
+          970.26,
+          478.69
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 2,
+      "points": [
+        [
+          555,
+          673
+        ],
+        [
+          1063.67,
+          717.74
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 3,
+      "points": [
+        [
+          417,
+          1303
+        ],
+        [
+          1172.46,
+          1353.18
+        ]
+      ]
+    }
+  ]
+}

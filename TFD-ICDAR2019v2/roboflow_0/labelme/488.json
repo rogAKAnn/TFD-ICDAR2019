@@ -1,0 +1,139 @@
+{
+  "imageData": null,
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "imagePath": "488.jpg",
+  "imageHeight": 2375,
+  "imageWidth": 1775,
+  "shapes": [
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 0,
+      "points": [
+        [
+          351,
+          1437
+        ],
+        [
+          1182.16,
+          1527.42
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 1,
+      "points": [
+        [
+          348,
+          1092
+        ],
+        [
+          1155.25,
+          1172.48
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 2,
+      "points": [
+        [
+          793,
+          1612
+        ],
+        [
+          979.04,
+          1655.94
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 3,
+      "points": [
+        [
+          350,
+          1726
+        ],
+        [
+          1428.25,
+          1900.33
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 4,
+      "points": [
+        [
+          520,
+          573
+        ],
+        [
+          1200.16,
+          782.2
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 5,
+      "points": [
+        [
+          348,
+          966
+        ],
+        [
+          1054.84,
+          1009.91
+        ]
+      ]
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "shape_type": "rectangle",
+      "label": "isolated_expression",
+      "group_id": 6,
+      "points": [
+        [
+          350,
+          1218
+        ],
+        [
+          1227.15,
+          1299.16
+        ]
+      ]
+    }
+  ]
+}
